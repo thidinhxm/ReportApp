@@ -7,6 +7,7 @@ import Settings from "../screens/Settings";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from "react-i18next";
 import { GlobalStyles } from "../constants/styles";
+import AddReportNavigator from "./AddReport";
 
 const BottomTab = createBottomTabNavigator<MainBottomTabParamsList>();
 
@@ -29,8 +30,8 @@ function MainNavigator() {
       }}
     >
       <BottomTab.Screen 
-        name='Home' 
-        component={Home}
+        name='AddReport' 
+        component={AddReportNavigator}
         options={{
           tabBarIcon: ({ color }) => (
             <Ionicons name='home' size={25} color={color}/>

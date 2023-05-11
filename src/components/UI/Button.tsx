@@ -27,11 +27,10 @@ export default Button;
 const styles = StyleSheet.create({
   button: {
     borderRadius: 6,
-    paddingVertical: 6,
+    paddingVertical: 12,
     paddingHorizontal: 12,
     marginHorizontal: 25,
     marginTop: 15,
-    height: 50,
     backgroundColor: GlobalStyles.colors.blue500,
     elevation: 2,
     shadowColor: GlobalStyles.colors.black,
@@ -44,7 +43,6 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     textAlign: 'center',
-    marginTop: 4,
     color: GlobalStyles.colors.white,
     fontSize: 20,
     fontWeight: 'bold',

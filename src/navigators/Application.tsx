@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { ApplicationStackParamList } from '../../@type/navigators';
-import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native';
 import Login from '../screens/Login';
 import MainNavigator from './Main';

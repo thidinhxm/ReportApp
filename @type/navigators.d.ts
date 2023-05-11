@@ -1,8 +1,8 @@
 import { NavigatorScreenParams } from '@react-navigation/native';
-import { NavtiveStackScreenProps } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export type MainBottomTabParamsList = {
-  Home: undefined;
+  AddReport: undefined;
   Reports: undefined;
   Stats: undefined;
   Settings: undefined;
@@ -14,4 +14,12 @@ export type ApplicationStackParamList = {
 };
 
 export type ApplicationScreenProps =
-  NavtiveStackScreenProps<ApplicationStackParamList>;
+  NativeStackScreenProps<ApplicationStackParamList>;
+
+export type AddReportStackParamList = {
+  Home: undefined;
+  NewReport: undefined;
+}
+
+export type AddReportScreenProps = 
+  NativeStackScreenProps<AddReportStackParamList>;
