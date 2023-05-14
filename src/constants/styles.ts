@@ -2,6 +2,8 @@ export const GlobalStyles = {
   colors: {
     white: '#FFFFFF',
     black: '#000000',
+    red: '#FF0000',
+    blackOpacity05: 'rgba(0, 0, 0, 0.5)',
     gray100: '#EDF2F7',
     gray200: '#E2E8F0',
     gray300: '#CBD5E0',
