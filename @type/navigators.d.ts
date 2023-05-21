@@ -1,3 +1,4 @@
+import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
@@ -6,6 +7,7 @@ export type MainBottomTabParamsList = {
   Reports: undefined;
   Stats: undefined;
   Settings: undefined;
+  Login: undefined,
 };
 
 export type ApplicationStackParamList = {
@@ -23,3 +25,6 @@ export type AddReportStackParamList = {
 
 export type AddReportScreenProps = 
   NativeStackScreenProps<AddReportStackParamList>;
+
+export type MainBottomTabScreenProps =
+  BottomTabScreenProps<MainBottomTabParamsList>;
