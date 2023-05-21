@@ -1,0 +1,19 @@
+{
+  "reportIncident": "Báo cáo sự cố",
+  "addCover": "Thêm ảnh bìa",
+  "changeCover": "Đổi ảnh bìa",
+  "removePhoto": "Xoá ảnh bìa",
+  "openCamera": "Mở Camera",
+  "openLibrary": "Mở thư viện",
+  "chooseImage": "Chọn ảnh",
+  "country": "Quốc gia",
+  "factory": "Nhà máy",
+  "description": "Mô tả",
+  "descriptionGuide": "Mô tả sự cố...",
+  "additionFiles": "Ảnh, Video & Tệp đính kèm bổ sung",
+  "add": "Thêm",
+  "submitReport": "Nộp báo cáo",
+  "cancelReportTitle": "Bạn chưa nộp báo cáo này. Bạn có chắc muốn huỷ bỏ nó?",
+  "discardReport": "Huỷ bỏ báo cáo",
+  "continueReporting": "Tiếp tục báo cáo"
+}

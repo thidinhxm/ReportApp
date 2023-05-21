@@ -1,0 +1,19 @@
+{
+  "reportIncident": "Report an Incident",
+  "addCover": "Add cover image",
+  "changeCover": "Change Cover",
+  "removePhoto": "Remove Photo",
+  "chooseImage": "Choose Image",
+  "openCamera": "Open Camera",
+  "openLibrary": "Open Library",
+  "country": "Country",
+  "factory": "Factory",
+  "description": "Description",
+  "descriptionGuide": "Describe the incident...",
+  "additionFiles": "Additional Photos, Video & Attachments",
+  "add": "Add",
+  "submitReport": "Submit Report",
+  "cancelReportTitle": "You have not submitted this report yet. Are you sure you want to discard it?",
+  "discardReport": "Discard This Report",
+  "continueReporting": "Continue Reporting"
+}

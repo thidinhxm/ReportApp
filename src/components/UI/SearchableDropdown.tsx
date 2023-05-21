@@ -26,9 +26,10 @@ function renderItem({item, onPressItem}: ItemProps) {
 type Props = {
   data: string[],
   defaultItem: string,
+  onSelect: (item: string) => void,
 }
 
-function SearchableDropdown({ data, defaultItem }: Props) {
+function SearchableDropdown({ data, defaultItem, onSelect }: Props) {
   const [isOpened, setIsOpened] = useState(false);
   const [dropdownList, setDropdownList] = useState(data);
   const [selectedItem, setSelectedItem] = useState(defaultItem);
@@ -48,6 +49,7 @@ function SearchableDropdown({ data, defaultItem }: Props) {
 
   const selectItemHandler = (item: string) => {
     setSelectedItem(item);
+    onSelect(item);
     closeModal();
   }
 

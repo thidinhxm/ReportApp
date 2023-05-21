@@ -32,11 +32,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 25,
     marginTop: 15,
     backgroundColor: GlobalStyles.colors.blue500,
-    elevation: 2,
-    shadowColor: GlobalStyles.colors.black,
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
   },
   pressed: {
     opacity: 0.7,

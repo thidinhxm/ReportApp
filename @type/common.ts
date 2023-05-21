@@ -7,3 +7,5 @@ export type Report = {
   location: string,
   time: Date,
 };
+
+export type FileType = 'image' | 'video' | 'other'; 

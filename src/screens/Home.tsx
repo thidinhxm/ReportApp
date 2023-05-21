@@ -5,6 +5,7 @@ import Octicons from "react-native-vector-icons/Octicons";
 import ReportCard from "../components/Reports/ReportCard";
 import { Report } from "../../@type/common";
 import { AddReportScreenProps } from "../../@type/navigators";
+import { useTranslation } from "react-i18next";
 
 const testImageURL = 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80';
 
@@ -32,6 +33,7 @@ const reports : Report[] = [
 ]
 
 function Home({ navigation } : AddReportScreenProps) {
+  const { t } = useTranslation(['homeScreen']);
 
   function addReportHandler() {
     navigation.navigate('NewReport');
@@ -55,7 +57,7 @@ function Home({ navigation } : AddReportScreenProps) {
         textStyle={styles.buttonTextReport}
       >
         <Octicons name='plus' size={20} />
-        <Text>  Report an Incident</Text>
+        <Text>{'   '}{t('homeScreen:reportIncident')}</Text>
       </Button>
       <FlatList 
         data={reports}
