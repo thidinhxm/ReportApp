@@ -3,6 +3,7 @@ import { GlobalStyles } from '../../constants/styles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useState } from 'react';
 import SearchInput from './SearchInput';
+import { useTranslation } from 'react-i18next';
 
 type ItemProps = {
   item: string,
@@ -33,6 +34,7 @@ function SearchableDropdown({ data, defaultItem, onSelect }: Props) {
   const [isOpened, setIsOpened] = useState(false);
   const [dropdownList, setDropdownList] = useState(data);
   const [selectedItem, setSelectedItem] = useState(defaultItem);
+  const { t } = useTranslation(['homeScreen']);
 
   const inputChangeHandler = (text: string) => {
     if (text.trim() === '') {
@@ -76,7 +78,11 @@ function SearchableDropdown({ data, defaultItem, onSelect }: Props) {
           onPressOut={closeModal}
         />
         <View style={styles.searchableDropDown}>
-          <SearchInput onInputChange={inputChangeHandler}/>
+          <SearchInput 
+            onInputChange={inputChangeHandler} 
+            placeholder={t('homeScreen:searchGuide')}
+            style={styles.searchInput}
+          />
           <FlatList 
             data={dropdownList}
             renderItem={(itemData) => renderItem({ item: itemData.item, onPressItem: selectItemHandler })}
@@ -125,5 +131,10 @@ const styles = StyleSheet.create({
   },
   pressedItem: {
     opacity: 0.5,
-  }
+  },
+  searchInput: {
+    marginHorizontal: 25,
+    marginTop: 25,
+    marginBottom: 13,
+  },
 })

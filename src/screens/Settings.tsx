@@ -4,8 +4,7 @@ import LanguageDropdown from "../components/LanguageDropdown";
 import Button from "../components/UI/Button";
 import { MainBottomTabScreenProps } from "../../@type/navigators";
 import { useTranslation } from "react-i18next";
-
-const testImageURL = 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80';
+import { testImageURL } from "../dummyData";
 
 function Settings({ navigation }: MainBottomTabScreenProps) {
   const { t } = useTranslation(['settingsScreen']);
