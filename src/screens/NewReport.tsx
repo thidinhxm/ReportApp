@@ -1,23 +1,17 @@
-import { View, TouchableOpacity, StyleSheet, TextInput, Modal, Text } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, TextInput, Modal, Text, ScrollView } from 'react-native';
 import { AddReportScreenProps } from '../../@type/navigators';
 import { useEffect, useState } from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { GlobalStyles } from '../constants/styles';
 import SearchableDropdown from '../components/UI/SearchableDropdown';
 import ReportCoverImage from '../components/Reports/ReportCoverImage';
-import { ScrollView } from 'react-native';
 import Button from '../components/UI/Button';
-import ButtonAddFile from '../components/Reports/ButtonAddFile';
 import { useTranslation } from 'react-i18next';
-import AdditionalFile from '../components/Reports/AdditionalFile';
-import { DocumentPickerResponse, types, pickMultiple } from 'react-native-document-picker';
+import { DocumentPickerResponse } from 'react-native-document-picker';
 import NewReportItem from '../components/Reports/NewReportItem';
 import { Asset } from 'react-native-image-picker';
 import AdditionalFileList from '../components/Reports/AdditionalFileList';
-
-const countries = ['Vietnam', 'Lao', 'Cambodia', 'Philippine', 'Singapore']
-const factories = ['Factory HCM', 'Factory DN', 'Factory HN', 'Factory NA']
-
+import { factories, countries } from '../dummyData';
 const CustomBackButton = ({ onPress }: { onPress: () => void}) => {
   return (
     <TouchableOpacity onPress={onPress}>
